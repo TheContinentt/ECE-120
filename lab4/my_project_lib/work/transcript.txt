@@ -1,0 +1,44 @@
+# //  ModelSim SE 10.1d Nov  1 2012 Linux 3.10.0-327.36.2.el7.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L my_project_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll} -pli {"/software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll"} my_project_lib.insert_coins(struct) 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# Loading /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.insert_coins(struct)#1
+# Loading work.lab6(struct)#1
+# Loading work.next_state_table(struct)#1
+gedit insert_coins.do
+# 
+# ** (gedit:30737): WARNING **: Error when getting information for file '/home/fzhang19/ece120/lab4/my_project_lib/work/insert_coins.do': No such file or directory
+gedit insert_coins.do
+add wave  \
+sim:/insert_coins/A \
+sim:/insert_coins/O0 \
+sim:/insert_coins/O1 \
+sim:/insert_coins/O2 \
+sim:/insert_coins/P \
+sim:/insert_coins/T \
+sim:/insert_coins/clk
+do insert_coins.do
+run 200
+# 0
+# 
+gedit insert_coins.doin
+# 
+# ** (gedit:30861): WARNING **: Error when getting information for file '/home/fzhang19/ece120/lab4/my_project_lib/work/insert_coins.doin': No such file or directory
+# 
+# ** (gedit:30861): WARNING **: Set document metadata failed: Error setting file metadata: No such file or directory
+gedit insert_coins.do
+# 
+# (gedit:30884): GtkSourceView-WARNING **: gtksourceprintcompositor.c:1931Error converting format to locale encoding: Invalid byte sequence in conversion input

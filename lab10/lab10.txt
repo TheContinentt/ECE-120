@@ -1,0 +1,9 @@
+QUESTION 1.  Read through the program lab10.bin. What do you expect the program to do? More specifically, which register will the program modify when it is run, and what will it contain when the program finishes? (You can probably figure this out merely by reading the comments provided in lab10.bin.)
+
+ANSWER: The register R2 is added by 12 and stored as R2.
+
+
+QUESTION 2.  Explain in a few sentences why the ability to step through a program (run one instruction at a time) is a very useful tool for debugging a program. Debugging is the process of finding and correcting bugs (or errors) in a program. Hint: Finding a bug is often much more difficult than correcting it.
+
+ANSWER: Stepping through the program is very useful for debugging because it's available for us to know what the program does in each step. So once the program shows something strange or some errors, we could know which step causes this bug and then revise that step instead of check all the steps of the program. So this is quite a convenient way to debug.
+

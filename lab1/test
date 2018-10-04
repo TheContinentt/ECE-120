@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+   char ascii = '0';
+    if (ascii >='0' || ascii <= '9' || ascii =='-' ||ascii == '+' )
+    {    printf ("%c\n, ascii");}
+	return 0;
+}
+
+

@@ -1,0 +1,95 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/fzhang19/ece120/lab4/my_project_lib/work
+T_opt
+V]d6H]PjT2W]NF88XbWC7l0
+04 6 6 work my_xor struct 1
+=1-1866da075176-57e2cb5c-6eed-152a
+Z1 o-quiet +acc -auto_acc_if_foreign -work my_project_lib -L my_project_lib
+n@_opt
+Z2 OE;O;10.1d;51
+Z3 d/home/fzhang19/ece120/lab4/my_project_lib/work
+T_opt1
+VASO?0lMV3;Oa8az^ClcGi1
+04 10 6 work full_adder struct 1
+=2-1866da075176-57e2d4ac-7de0a-17a6
+R1
+n@_opt1
+R2
+Efull_adder
+Z4 w1474483370
+Z5 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R3
+Z8 8/home/fzhang19/ece120/lab4/my_project_lib/hdl/full_adder_struct.vhd
+Z9 F/home/fzhang19/ece120/lab4/my_project_lib/hdl/full_adder_struct.vhd
+l0
+L13
+V7VVZCn268O5F5;K>EkI5d1
+Z10 OE;C;10.1d;51
+32
+Z11 !s108 1474483370.591511
+Z12 !s90 -work|my_project_lib|-nologo|-f|/tmp/Files0|
+Z13 !s107 /home/fzhang19/ece120/lab4/my_project_lib/hdl/full_adder_struct.vhd|
+Z14 o-work my_project_lib -nologo
+Z15 tExplicit 1
+!s100 oNEo=D@RQXd3^Vlmc8g`Q3
+!i10b 1
+Astruct
+DEx14 my_project_lib 6 my_xor 0 22 RfKfYGzg=b>OVz<__AX`43
+DEx4 work 10 full_adder 0 22 7VVZCn268O5F5;K>EkI5d1
+R5
+R6
+R7
+l67
+L41
+V_ji`ho<`BhlKSaeZQ0?dG2
+R10
+32
+R11
+R12
+R13
+R14
+R15
+!s100 CReYh;jkLQ@06;4NPjz=h2
+!i10b 1
+Emy_xor
+Z16 w1474480982
+R5
+R6
+R7
+R3
+Z17 8/home/fzhang19/ece120/lab4/my_project_lib/hdl/my_xor_struct.vhd
+Z18 F/home/fzhang19/ece120/lab4/my_project_lib/hdl/my_xor_struct.vhd
+l0
+L13
+VRfKfYGzg=b>OVz<__AX`43
+R10
+32
+Z19 !s108 1474480982.502925
+R12
+Z20 !s107 /home/fzhang19/ece120/lab4/my_project_lib/hdl/my_xor_struct.vhd|
+R14
+R15
+!s100 c0b6i`2=MYLOL@cGgFB9D0
+!i10b 1
+Astruct
+DEx4 work 6 my_xor 0 22 RfKfYGzg=b>OVz<__AX`43
+R5
+R6
+R7
+l50
+L38
+V8V5GdEjn<oh[d2g=IQT8o2
+R10
+32
+R19
+R12
+R20
+R14
+R15
+!s100 ?QR?dV=?0K:0NTI;MNa4z1
+!i10b 1

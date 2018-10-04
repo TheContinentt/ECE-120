@@ -1,0 +1,16 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	MASK_LOOP         300F
+//	READING_LOOP      3012
+//	COLUMN_LOOP       301B
+//	ROW_LOOP          3021
+//	OUTPUT_ZERO       3028
+//	OUTPUT_ONE        302F
+//	NEXT_ROW          3036
+//	DONE              303C
+//	ASCII_NL          303D
+//	LEA_DATA          303E
+//	FONT_DATA         303F
+

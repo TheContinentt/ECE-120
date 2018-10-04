@@ -1,0 +1,17 @@
+Question 1: Describe the errors that occur when trying to assemble lab12.asm. Identify the cause of each error.
+Ans:1)THe value of several registers are random and different from what they expected to see. That's because the program doesn't initialize R1,R2,R5,R0 to be 0. 
+2)Loops in the original program doesn't work. That's because the 2 counters(R3,R4) are set to be negative so loop could not work. I just change two counters to their correct starting value.
+3)In line 20 LD and line 39 ST instructions, the program doesn't use labels and the input number is out of the range. That's because it doesn't use a label which is much easier to compute the correct input valus.
+4)The outerloop doesn't work because in line 31 the BR instruction is in incorrect format. It should be written as BRzp instead of BRpz.
+
+Question 2: For each label in the code, write down the corresponding memory location. 
+OUTERLOOP: x3109
+INNERLOOP: x310A
+INPUT: x3013
+INPUT1: x3014
+INPUT2: x3015
+INPUT3: x3016
+INPUT4: x3011
+
+Question 3: Between using labels and explicit memory locations/offsets, which one makes the most sense, and why?
+Ans: Labels make the most sense. Because when we are reading the code, it's not easy for us to determine how many lines are five or six lines. But if we use the label instead of offset, we just need to find where the label is, which is much easier to use and find.

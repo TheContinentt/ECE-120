@@ -1,0 +1,25 @@
+; This is the file you will use for the lab assignment
+; Make sure to comment your code properly and don't exceed 
+; the line limitation for this assignment.  Good luck!
+; Program Description: This code is written by Feifan Zhang in 4th, Nov. This program simply adds all positive numbers among the address from x3132 to x313B and ignore all the negative numbers among them. I use BR here to form a loop and until counter is 0 the loop will end automatically. And a temporary register is used for store the value of positive numbers and is added to the sum register.
+; R1 is a temporary register which contains the value of all positive number
+; R3 is the register for counting pointer
+; R4 is the register for the counter value
+; R5 is the register that restores the sum of all positive numbers
+
+0011 0001 0000 0000 ; x3100 - starting address of the program
+
+; The program description and code starts here
+0101 001 001 1 00000 ; R1 <- 0              clear the current value of R1
+0101 011 011 1 00000 ; R3 <- 0              clear the current value of R3
+0101 100 100 1 00000 ; R4 <- 0              clear the current value of R4
+0101 101 101 1 00000 ; R5 <- 0              clear the current value of R5
+1110 011 000101101   ; R3 <- PC + x2D       put the value x3132 in R3
+0001 100 100 1 01010 ; R4 <- R4 + 10        add decimal number 10 to the R4
+0110 001 011 000000  ; R1 <- M[ R3 ]        load the content in the address R3 to R1
+0000 110 000000001   ; if nz, PC <- PC + x2 check if R1 is negative or zero
+0001 101 101 0 00 001; R5 <- R5 + R1        add positive value to R5
+0001 011 011 1 00001 ; R3 <- R3 + x1        increment pointer
+0001 100 100 1 11111 ; R4 <- R4 - x1        decrement counter
+0000 001 111111010   ; if p, PC <- PC - x5  check if R4 is positive
+1111 0000 0010 0101  ; halt                 end the program
